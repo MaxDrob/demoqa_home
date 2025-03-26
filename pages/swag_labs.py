@@ -10,14 +10,14 @@ class SwagLabs(BasePage):
             return False
         return True
 
-    def exist_username_field(self):
+    def exist_username(self):
         try:
             self.find_element(locator='input#user-name')
         except NoSuchElementException:
             return False
         return True
 
-    def exist_password_field(self):
+    def exist_password(self):
         try:
             self.find_element(locator='input#password')
         except NoSuchElementException:
